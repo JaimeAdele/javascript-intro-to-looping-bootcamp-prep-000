@@ -14,10 +14,10 @@ function whileLoop(n){
 }
 
 function doWhileLoop(array){
+  function mayBeTrue(){
+    return Math.random() >= 0.5;
+  }
   do {
-    function mayBeTrue(){
-      return Math.random() >= 0.5;
-    }
     array.pop();
   } while (array.length > 0 && maybeTrue());
 }
